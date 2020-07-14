@@ -16,8 +16,14 @@ client.once('ready', () => {
 // Command Line
 
 client.on('message' , message => {
-    if (msg.content === '!meep') {
-        msg.reply('MEEP MY BOIZ MMMMMMMEEEEEEEEEPPPPPP!!!');
+    if (!message.content.startingwith(prefix) || message.author.bot) return; {
+        
+        const args = message.content.slice(prefix.legnth).split(/ +/);
+        const command = args.shift().toLowerCase();
+
+        if(command === 'ping'){
+            message.channel.send('pong!');
+        }
     }
 })
 
@@ -37,4 +43,4 @@ client.on('message' , message => {
 
 
 // Never put token in code
-client.login('token here');
+client.login('');
