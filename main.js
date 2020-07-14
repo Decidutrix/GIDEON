@@ -4,7 +4,6 @@ const client = new Discord.Client();
 // Command Prefix
 const prefix = '!';
 
-
 // This will notify when the bot is up
 
 client.once('ready', () => {
@@ -13,17 +12,17 @@ client.once('ready', () => {
 
 
 
+
 // Command Line
 
-client.on('message' , message => {
-    if (!message.content.startingwith(prefix) || message.author.bot) return; {
+client.on('message', message =>{
+    if(!message.content.startsWith(prefix) || message.author.bot) return;
         
-        const args = message.content.slice(prefix.legnth).split(/ +/);
-        const command = args.shift().toLowerCase();
+    const args = message.content.slice(prefix.legnth).split(/ +/);
+    const command = args.shift().toLowerCase();
 
-        if(command === 'ping'){
-            message.channel.send('pong!');
-        }
+    if(command === 'ping'){
+        message.channel.send('pong!');
     }
 })
 
@@ -41,6 +40,5 @@ client.on('message' , message => {
 
 
 
-
 // Never put token in code
-client.login('');
+client.login('token');
