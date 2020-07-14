@@ -28,7 +28,7 @@ client.on('message', message =>{
     } else if (command == 'meep'){
         message.channel.send('MEEP MY BOIZ MMMMMMEEEEEEEEEPPPPPPP')
     } else if (command == 'gideon'){
-        message.channel.send('Hello, I am GIDEON the main bot in this server please use -!comms to see what I can do');
+        message.channel.send('Hello, I am GIDEON the main bot in this server please use -!help to see what I can do');
     }
 })
 
