@@ -31,6 +31,8 @@ client.on('message', message =>{
         message.channel.send('MEEP MY BOIZ MMMMMMEEEEEEEEEPPPPPPP')
     } else if (command == 'twitch'){
         message.channel.send('[Twitch](https://www.twitch.tv/parzavltv)');
+    } else if (command == 'thiccgod'){
+        message.channel.send('I AM THICC GOD!!! PRAISE ME!!!!');
     }
 })
 
