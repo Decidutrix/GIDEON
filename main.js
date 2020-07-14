@@ -23,6 +23,12 @@ client.on('message', message =>{
 
     if(command === 'ping'){
         message.channel.send('pong!');
+    } else if (command == 'twitter'){
+        message.channel.send('https://twitter.com/CodingGengar');
+    } else if (command == 'meep'){
+        message.channel.send('MEEP MY BOIZ MMMMMMEEEEEEEEEPPPPPPP')
+    } else if (command == 'gideon'){
+        message.channel.send('Hello, I am GIDEON the main bot in this server please use -!comms to see what I can do');
     }
 })
 
