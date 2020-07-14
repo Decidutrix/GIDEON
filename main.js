@@ -49,4 +49,4 @@ client.on('message', message =>{
 
 
 // Never put token in code
-client.login('NjE3NTM5ODUyMjc5NDgwMzUx.Xw1rDw.-jxi8gU2BNCaBKdLjYlAU8pqfR8');
+client.login('ENTER DISCORD TOKEN HERE');
