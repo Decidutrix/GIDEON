@@ -7,7 +7,7 @@ const prefix = '!';
 // This will notify when the bot is up
 
 client.once('ready', () => {
-    console.log('Hello my name is GIDEON');
+    console.log('GIDEON is now online! :)');
 });
 
 
@@ -21,8 +21,16 @@ client.on('message', message =>{
     const args = message.content.slice(prefix.length).split(/ +/);
     const command = args.shift().toLowerCase();
 
-    if(command === 'ping'){
-        message.channel.send('pong!');
+    if(command === 'gideon'){
+        message.channel.send('Hello, I am **GIDEON**! Im the main bot in this server. These are the commands I can do: \n'  
+        + '`!twitter`  |  `!meep`  |  `!gideon` \n\n'
+        + '`!twitch`');
+    } else if (command == 'twitter'){
+        message.channel.send('[Twitter](https://twitter.com/CodingGengar)');
+    } else if (command == 'meep'){
+        message.channel.send('MEEP MY BOIZ MMMMMMEEEEEEEEEPPPPPPP')
+    } else if (command == 'twitch'){
+        message.channel.send('[Twitch](https://www.twitch.tv/parzavltv)');
     }
 })
 
@@ -41,4 +49,4 @@ client.on('message', message =>{
 
 
 // Never put token in code
-client.login('token');
+client.login('NjE3NTM5ODUyMjc5NDgwMzUx.Xw1rDw.-jxi8gU2BNCaBKdLjYlAU8pqfR8');
