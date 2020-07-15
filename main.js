@@ -33,6 +33,12 @@ client.on('message', message =>{
         message.channel.send('[Twitch](https://www.twitch.tv/parzavltv)');
     } else if (command == 'thiccgod'){
         message.channel.send('I AM THICC GOD!!! PRAISE ME!!!!');
+    } else if (command == 'rank'){
+        message.channel.send('here are the ranks for @Parzavl: \n'
+        +'| **Valorant**  -  | *Bronze 2* | \n' 
+        +'| **Overwatch**  -  | *TANK - 1916* | | *DPS - NR* | | *SUPPORT - NR* |  \n' 
+        +'| **League of Legends**  -  | *Bronze 2* | \n' 
+        +'| **Dead by Daylight**  -  | *Surviver - 12* | | *Killer - 13* | |')
     }
 })
 
@@ -51,4 +57,4 @@ client.on('message', message =>{
 
 
 // Never put token in code
-client.login('ENTER DISCORD TOKEN HERE');
+client.login('DISCORD BOT TOKEN HERE');
