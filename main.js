@@ -43,6 +43,9 @@ client.on('message', message =>{
 })
 
 
+// Added the Twitch API notif through IFTTT
+//(Twitch API GOES HERE)
+
 
 
 
