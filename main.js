@@ -58,6 +58,6 @@ client.on('message', message =>{
 
 
 
-
+// Make sure token doesn't regenerate
 // Never put token in code
 client.login('DISCORD BOT TOKEN HERE');
